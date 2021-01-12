@@ -14,5 +14,5 @@ jobs:
   prerequisites:
     commands:
       - >
-        sudo apk add --no-cache openssl-dev yaml-dev
-          yq@community          
+        sudo apk add --no-cache
+          openssl-dev yaml-dev
