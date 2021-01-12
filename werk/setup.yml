@@ -1,0 +1,18 @@
+version: "1.0"
+
+jobs:
+  main:
+    needs:
+      - git
+      - prerequisites
+  
+  git:
+    commands:
+      - git config --global user.name "Tudor Marghidanu"
+      - git config --global user.email tudor@marghidanu.com
+
+  prerequisites:
+    commands:
+      - >
+        apk add --no-cache openssl-dev yaml-dev
+          yq@community          

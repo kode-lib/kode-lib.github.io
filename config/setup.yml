@@ -1,7 +1,0 @@
-version: "1.0"
-
-jobs:
-  main:
-    commands:
-      - git config --global user.name "Tudor Marghidanu"
-      - git config --global user.email tudor@marghidanu.com
