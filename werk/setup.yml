@@ -4,7 +4,7 @@ jobs:
   main:
     needs:
       - git
-      - prerequisites
+      - extensions
   
   git:
     commands:
@@ -17,4 +17,9 @@ jobs:
         sudo apk add --no-cache 
         openssl-dev yaml-dev
         yq@community
-        
+  
+  extensions:
+    commands:
+      - code-server --install-extension faustinoaq.crystal-lang
+    needs:
+      - prerequisites
