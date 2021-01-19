@@ -3,3 +3,6 @@ remote_theme: yous/whiteglass
 title: KodeLib
 author: KodeLib
 url: http://kodelib.com
+lang: en
+timezone: UTC
+
